@@ -1,0 +1,66 @@
+{
+  "optimal_parameters": {
+    "P": 120.0,
+    "D": 4.0,
+    "error": 1.8047819157600777
+  },
+  "analysis": [
+    {
+      "P": 120.0,
+      "D": 4.0,
+      "Total_Error": 1.8047819157600777,
+      "Settling_Time": Infinity,
+      "Overshoot": 18.67681683572776,
+      "Steady_State_Error": 0.8040086947720058
+    },
+    {
+      "P": 40.0,
+      "D": 2.0,
+      "Total_Error": 2.2785163401073834,
+      "Settling_Time": Infinity,
+      "Overshoot": 14.926887876981448,
+      "Steady_State_Error": 0.5646546321186072
+    },
+    {
+      "P": 150.0,
+      "D": 5.0,
+      "Total_Error": 2.4062838919893634,
+      "Settling_Time": Infinity,
+      "Overshoot": 227.9844858758517,
+      "Steady_State_Error": 1.2921729730057088
+    },
+    {
+      "P": 80.0,
+      "D": 3.0,
+      "Total_Error": 2.5384515625821726,
+      "Settling_Time": Infinity,
+      "Overshoot": 230.82093390812136,
+      "Steady_State_Error": 1.4314377758468568
+    },
+    {
+      "P": 20.0,
+      "D": 1.0,
+      "Total_Error": 3.6706295860930926,
+      "Settling_Time": Infinity,
+      "Overshoot": 220.0007880053819,
+      "Steady_State_Error": 0.9027674288102734
+    }
+  ],
+  "config": {
+    "file_pattern": "pd_p*.csv",
+    "p_range": [
+      0.1,
+      200
+    ],
+    "d_range": [
+      0.5,
+      5
+    ],
+    "optimization_method": "L-BFGS-B",
+    "max_iterations": 500,
+    "tolerance": 1e-05,
+    "weight_position": 1.0,
+    "weight_velocity": 0.5,
+    "weight_acceleration": 0.3
+  }
+}
